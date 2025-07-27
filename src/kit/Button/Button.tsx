@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`rounded-[12px] text-[#2A2A2A] text-base font-medium border px-6 py-3 ${className}`}
+      className={`rounded-[12px] inline-block text-center text-[#2A2A2A]  font-semibold border text-6 px-6 py-3 ${className}`}
     >
       {buttonText}
       {children}

@@ -1,15 +1,6 @@
 import React, { useState, useMemo } from "react";
-import {
-  format,
-  addDays, // Додано для перемикання тижнів
-  subDays, // Додано для перемикання тижнів
-  startOfWeek, // Додано для визначення початку тижня
-  isSameDay,
+import { format, addDays, subDays, startOfWeek, isSameDay } from "date-fns";
 
-  // Locale type should be imported from 'date-fns/locale'
-} from "date-fns";
-
-// Припустимо, у вас є інтерфейс для книги або просто URL обкладинки
 interface BookCover {
   src: string;
   alt: string;
@@ -29,17 +20,13 @@ interface ScheduleReadingProps {
 const ScheduleReading: React.FC<ScheduleReadingProps> = ({
   scheduledBooks = [],
 }) => {
-  // Зберігаємо початкову дату видимого тижня
-  // Почнемо з початку поточного тижня (понеділок або неділя, залежить від locale/startOfWeek options)
   const [weekStart, setWeekStart] = useState<Date>(
     startOfWeek(new Date(), { weekStartsOn: 1 }),
-  ); // weekStartsOn: 1 для понеділка, 0 для неділі
-  const today = useMemo(() => new Date(), []); // Поточна дата, щоб позначити "сьогодні"
+  );
+  const today = useMemo(() => new Date(), []);
 
-  // Генеруємо дні для поточного видимого тижня
   const weekDays = useMemo(() => {
     const daysArray: Date[] = [];
-    // Генеруємо 7 днів, починаючи з weekStart
     for (let i = 0; i < 7; i++) {
       daysArray.push(addDays(weekStart, i));
     }
@@ -48,37 +35,34 @@ const ScheduleReading: React.FC<ScheduleReadingProps> = ({
 
   const displayDays = useMemo(() => {
     return weekDays.map((dayDate) => {
-      // Перевіряємо, чи є книга, запланована на цю дату
       const bookForDay = scheduledBooks.find((book) =>
         isSameDay(book.date, dayDate),
       );
       return {
-        dayOfWeek: format(dayDate, "EEE"), // 'Mon', 'Tue'
-        date: format(dayDate, "d"), // '12', '13'
+        dayOfWeek: format(dayDate, "EEE"),
+        date: format(dayDate, "d"),
         fullDate: dayDate,
-        isSelected: isSameDay(dayDate, today), // Виділяємо сьогоднішній день
+        isSelected: isSameDay(dayDate, today),
         book: bookForDay ? bookForDay.cover : null,
       };
     });
   }, [weekDays, today, scheduledBooks]);
 
   const handlePrevWeek = () => {
-    setWeekStart((prevWeekStart) => subDays(prevWeekStart, 7)); // Переміщуємо на 7 днів назад
+    setWeekStart((prevWeekStart) => subDays(prevWeekStart, 7));
   };
 
   const handleNextWeek = () => {
-    setWeekStart((prevWeekStart) => addDays(prevWeekStart, 7)); // Переміщуємо на 7 днів вперед
+    setWeekStart((prevWeekStart) => addDays(prevWeekStart, 7));
   };
 
   return (
-    <div className=" p-6 rounded-lg ">
-      {/* Заголовок та навігація */}
+    <div className=" p-6 rounded-lg md:col-start-4 md:col-end-5 md:row-start-3 md:row-end-4  ">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-xl font-semibold text-gray-800 mr-4">
+        <h3 className="text-[24px] font-bold text-[#2A2a2a] mr-4">
           Schedule Reading
         </h3>
-        <div className="flex items-center space-x-2  text-2xl">
-          {/* Кнопки навігації по тижнях */}
+        <div className="flex items-center   text-2xl text-[#2A2a2a]">
           <button
             onClick={handlePrevWeek}
             className="hover:text-gray-700 focus:outline-none"
@@ -86,10 +70,8 @@ const ScheduleReading: React.FC<ScheduleReadingProps> = ({
           >
             &lt;
           </button>
-          {/* Відображення поточної дати, яку ми переглядаємо.
-              Можна відображати "Тиждень з [поч. дата] по [кінц. дата]" або "Липень 2025"
-          */}
-          <span className="text-lg text-center font-medium">
+
+          <span className="text-[14px]  text-center font-medium">
             {format(weekStart, "MMM d")} -{" "}
             {format(addDays(weekStart, 6), "MMM d, yyyy")}
           </span>

@@ -1,15 +1,28 @@
 import React from "react";
 
 import MainPage from "./pages/MainPage/MainPage";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import AppLayout from "./ui/AppLayout";
+import NotFoundPage from "./pages/MainPage/NotFoundPage";
 
 function App() {
-  return (
-    <>
-      <section className="bg-[#dcdcdc] min-h-screen">
-        <MainPage />
-      </section>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <MainPage />,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <NotFoundPage />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

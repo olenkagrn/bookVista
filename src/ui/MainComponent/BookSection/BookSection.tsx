@@ -23,7 +23,7 @@ const BookSection: React.FC<BooksProps> = ({ title, books, limit }) => {
   const booksToDisplay = limit ? books.slice(0, visibleCount) : books;
 
   return (
-    <section className="mb-14 md:inline-block p-6 ">
+    <section className="md:inline-block p-6 ">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-xl md:text-3xl  font-semibold text-wrap text-[#2A2A2A]">
           {title}

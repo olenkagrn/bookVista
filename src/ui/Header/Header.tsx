@@ -5,7 +5,7 @@ import Button from "../../kit/Button";
 
 const Header: React.FC = () => {
   return (
-    <header className="hidden md:flex items-center justify-end pt-6 gap-[32px]">
+    <header className=" hidden md:flex items-center justify-end pt-6 gap-[32px] md:col-start-4 md:col-end-5 row-start-1 md:row-span-1 md: self-end">
       <UserItem />
       <Icon name="notifications" width={32} height={32} />
       <Icon name="dark-mode" width={32} height={32} />

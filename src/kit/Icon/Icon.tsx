@@ -8,14 +8,16 @@ const Icon: React.FC<IconProps> = ({
   width = 48,
   height = 48,
 }) => (
-  <svg
-    className={`inline-block fill-current rounded-full
+  <li className="list-none">
+    <svg
+      className={`inline-block fill-current rounded-full
  ${className}`}
-    width={width}
-    height={height}
-  >
-    <use href={`${iconsSpriteUrl}#${name}`} />
-  </svg>
+      width={width}
+      height={height}
+    >
+      <use href={`${iconsSpriteUrl}#${name}`} />
+    </svg>
+  </li>
 );
 
 export default Icon;
