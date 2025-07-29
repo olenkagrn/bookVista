@@ -1,9 +1,9 @@
 import React from "react";
-import BookSection from "../../ui/MainComponent/BookSection/BookSection";
-import { announcementsBooks, popularBooks } from "../../constanrs";
-import HeroSection from "../../ui/MainComponent/HeroSection/HeroSection";
-import ScheduleReading from "../../ui/ScheduleReading/ScheduleReading";
-import ReadersFriends from "../../ui/ReadersFriends/ReadersFriends";
+import BookSection from "../ui/MainComponent/BookSection/BookSection";
+import { announcementsBooks, popularBooks } from "../constanrs";
+import HeroSection from "../ui/MainComponent/HeroSection/HeroSection";
+import ScheduleReading from "../ui/ScheduleReading/ScheduleReading";
+import ReadersFriends from "../ui/ReadersFriends/ReadersFriends";
 
 const MainPage: React.FC = () => {
   return (
