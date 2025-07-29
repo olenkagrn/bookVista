@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../kit/Button";
-import Icon from "../../kit/Icon";
-import NotFoundImg from "../../assets/404.png";
+import Button from "../kit/Button";
+import Icon from "../kit/Icon";
+import NotFoundImg from "../assets/404.png";
 const NotFoundPage: React.FC = () => {
   return (
     <section className="grid grid-cols-[1fr_2fr] place-items-center gap-6 max-w-7xl m-auto h-screen">
@@ -16,7 +16,7 @@ const NotFoundPage: React.FC = () => {
         </p>
         <Button
           buttonText="Go Back"
-          className="bg-[#FF4F5B] text-[#F1EFE3] py-3 mt-12"
+          className="bg-accent text-background py-3 mt-12"
         >
           <Icon
             name="arrow-long-right"

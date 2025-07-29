@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
-
+// eslint-disable-next-line no-undef
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -11,11 +11,9 @@ export default {
         customAccentColor: "#FF4F5B",
       },
       fontFamily: {
-        "oooh-baby": ['"Oooh Baby"', "cursive"],
+        montserrat: ['"Montserrat"', "sans-serif"],
       },
-      backgroundColor: {
-        "loader-background": "#3498db",
-      },
+
       keyframes: {
         loading: {
           "0%, 100%": { transform: "scaleY(1)" },
@@ -23,7 +21,6 @@ export default {
         },
       },
       animation: {
-        // animate-loading клас
         loading: "loading 0.8s ease-in-out infinite",
       },
     },

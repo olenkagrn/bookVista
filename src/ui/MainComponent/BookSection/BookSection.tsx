@@ -3,7 +3,12 @@ import React from "react";
 import Book from "../../Books/Book/Book";
 import type BooksProps from "../../../models/BookSectionProps ";
 import { useEffect } from "react";
-const BookSection: React.FC<BooksProps> = ({ title, books, limit }) => {
+const BookSection: React.FC<BooksProps> = ({
+  title,
+  books,
+  limit,
+  className = "",
+}) => {
   const [visibleCount, setVisibleCount] = React.useState(1);
 
   const updateVisibleCount = () => {
@@ -23,14 +28,14 @@ const BookSection: React.FC<BooksProps> = ({ title, books, limit }) => {
   const booksToDisplay = limit ? books.slice(0, visibleCount) : books;
 
   return (
-    <section className="md:inline-block p-6 ">
+    <section className={`md:inline-block  ${className}`}>
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-xl md:text-3xl  font-semibold text-wrap text-[#2A2A2A]">
+        <h2 className="text-xl md:text-3xl  font-semibold text-wrap text-dark-default">
           {title}
         </h2>
         <Icon
           name="arrow-right"
-          className="text-[#2A2A2A] cursor-pointer "
+          className="text-dark-default cursor-pointer "
           width={32}
           height={48}
         />

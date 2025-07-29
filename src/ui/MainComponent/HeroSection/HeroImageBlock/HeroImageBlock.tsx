@@ -9,7 +9,7 @@ const HeroImageBlock: React.FC = () => {
         alt="Open book"
         className="md:w-[500px] shadow-2xl"
       />
-      <p className="italic text-3xl text-[#2A2A2A]  text-center md:text-start">
+      <p className="italic text-3xl text-dark-default  text-center md:text-start">
         “Build Your Library, One Book at a Time”
       </p>
     </div>

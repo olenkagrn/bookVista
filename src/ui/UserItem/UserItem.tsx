@@ -7,7 +7,7 @@ const UserItem: React.FC = () => {
       <img
         src={userLogo}
         alt="User Logo"
-        className="rounded-[100px] w-[64px] h-[64px]"
+        className="rounded-[100px] w-[52px] h-[52px]"
       />
       <p>Olena Hrynko</p>
     </div>

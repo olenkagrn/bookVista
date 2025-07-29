@@ -14,7 +14,7 @@ const Book: React.FC<BookProps> = ({ coverUrl, title, author }) => {
         alt={title}
         className="w-full object-fit  rounded-md shadow-md mb-2  max-h-60"
       />
-      <h3 className="text-sm font-medium text-[#2A2A2A] line-clamp-2 ">
+      <h3 className="text-sm font-medium text-dark-default line-clamp-2 ">
         {title}
       </h3>{" "}
       <p className="text-xs text-gray-600">{author}</p>

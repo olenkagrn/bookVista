@@ -59,10 +59,10 @@ const ScheduleReading: React.FC<ScheduleReadingProps> = ({
   return (
     <div className=" p-6 rounded-lg md:col-start-4 md:col-end-5 md:row-start-3 md:row-end-4  ">
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-[24px] font-bold text-[#2A2a2a] mr-4">
+        <h3 className="text-[24px] font-bold text-dark-default mr-4">
           Schedule Reading
         </h3>
-        <div className="flex items-center   text-2xl text-[#2A2a2a]">
+        <div className="flex items-center   text-2xl text-dark-default">
           <button
             onClick={handlePrevWeek}
             className="hover:text-gray-700 focus:outline-none"

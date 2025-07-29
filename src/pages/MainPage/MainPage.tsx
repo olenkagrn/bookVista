@@ -8,7 +8,7 @@ import ReadersFriends from "../../ui/ReadersFriends/ReadersFriends";
 const MainPage: React.FC = () => {
   return (
     <>
-      <section className=" flex flex-col min-h-screen  pt-12 md:grid md:p-0 md:grid-cols-[auto_1fr] md:grid-rows-[7_1fr] gap-6 relative max-w-[1440px] m-auto  md:pr-16">
+      <section className=" flex flex-col min-h-screen  pt-12 md:grid md:p-0 md:grid-cols-[auto_1fr] md:grid-rows-[7_1fr] gap-6 relative max-w-[1440px] m-auto lg:px-16  ">
         <section className="md:col-start-2 md:col-end-5 md:row-start-2 md:row-end-3 ">
           <HeroSection />
         </section>

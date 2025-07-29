@@ -19,7 +19,7 @@ const ReaderFriend: React.FC = () => {
         gripping, perfectly paced, and incredibly clever mystery that will keep
         you guessing, this is absolutely it.
       </p>
-      <span className="font-semibold text-[#FF4F5B]">
+      <span className="font-semibold text-accent">
         A Good Girl&lsquo;s Guide to Murder
       </span>
     </section>

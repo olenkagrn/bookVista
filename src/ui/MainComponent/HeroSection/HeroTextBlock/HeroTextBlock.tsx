@@ -3,7 +3,7 @@ import Button from "../../../../kit/Button";
 const HeroTextBlock: React.FC = () => {
   return (
     <div className=" max-w-md text-center md:text-start">
-      <h1 className="text-4xl text-[#2A2A2A] font-bold mb-4">
+      <h1 className="text-4xl text-dark-default font-bold mb-4">
         From Shelf
         <br />
         to Story:
@@ -12,12 +12,12 @@ const HeroTextBlock: React.FC = () => {
         <br />
         Awaits.
       </h1>
-      <p className="text-[#2A2A2A] mb-6">
+      <p className="text-dark-default mb-6">
         Discover your next favorite book among a multitude of genres and
         authors. BookVista is your personal space for exploring new literary
         horizons and tracking treasures you&apos;ve already read.
       </p>
-      <Button buttonText="Let`s Search A Book" className=" border-[#959389]" />
+      <Button buttonText="Let`s Search A Book" className=" border-border" />
     </div>
   );
 };

@@ -4,4 +4,5 @@ export default interface BookSectionProps {
   title: string;
   books: BookItem[];
   limit?: number;
+  className?: string;
 }
