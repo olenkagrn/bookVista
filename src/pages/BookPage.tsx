@@ -3,11 +3,11 @@ import BookImg from "../assets/booktitle.png";
 import Icon from "../kit/Icon";
 import Button from "../kit/Button";
 import BookSection from "../ui/MainComponent/BookSection/BookSection";
-import { announcementsBooks } from "../constanrs";
+import { announcementsBooks } from "../constants";
 import StarRating from "../ui/StartRating";
 const BookPage = () => {
   return (
-    <section className="px-8 lg:px-16 mt-20 grid place-items-center gap-y-12 gap-x-20  lg:grid-rows-[min-content_min-content_1fr]  lg:grid-cols-[1fr_1fr]">
+    <section className=" lg:px-16 mt-20 grid place-items-center gap-y-12 gap-x-20  lg:grid-rows-[min-content_min-content_1fr]  lg:grid-cols-[1fr_1fr]">
       <div className="relative w-full lg:mx-16 lg:h-[28rem] lg:row-end-2 lg:col-span-full rounded-t-3xl ">
         <div
           className="absolute inset-0 bg-cover bg-center h-full rounded-t-3xl"
@@ -83,7 +83,7 @@ const BookPage = () => {
           the Fae, and perhaps, all realms. Perfect for fans of passionate
           romance, rich world-building, and high fantasy.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <Button
             type="transparent"
             buttonText="Fantasy"

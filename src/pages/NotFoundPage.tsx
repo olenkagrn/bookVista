@@ -16,9 +16,9 @@ const NotFoundPage: React.FC = () => {
         </p>
         <Button
           type="primary"
-          buttonText="Go Back"
-          className="bg-accent text-background py-3 mt-12"
+          className="bg-accent text-background py-3 mt-12 "
         >
+          Go Back
           <Icon
             name="arrow-long-right"
             width={18}

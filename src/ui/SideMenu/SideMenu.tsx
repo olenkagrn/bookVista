@@ -2,21 +2,7 @@ import React, { useState } from "react";
 import Icon from "../../kit/Icon";
 import Logo from "../../kit/Logo/Logo";
 import { Link, useLocation } from "react-router-dom";
-
-const menuItems = [
-  { icon: "home-icon", label: "Home", path: "/" },
-  { icon: "search-icon", label: "Search A Book", path: "/search" },
-  { icon: "saved-icon", label: "Saved Books", path: "/saved" },
-  { icon: "what-to-read", label: "Hmm... Choose A Book", path: "/choose" },
-  {
-    icon: "translate-to-voice",
-    label: "Let`s transform to voice",
-    path: "/voice",
-  },
-  { icon: "add-friend", label: "Add Friends", path: "/friends" },
-  { icon: "settings", label: "Settings", path: "/settings" },
-];
-
+import { menuItems } from "../../constants";
 interface SideMenuProps {
   onMenuHoverChange: (isHovered: boolean) => void;
 }

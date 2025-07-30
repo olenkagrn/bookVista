@@ -8,7 +8,7 @@ const Icon: React.FC<IconProps> = ({
   width = 48,
   height = 48,
 }) => (
-  <li className="list-none cursor-pointer">
+  <span className="list-none cursor-pointer">
     <svg
       className={`inline-block fill-current rounded-full
  ${className}`}
@@ -17,7 +17,7 @@ const Icon: React.FC<IconProps> = ({
     >
       <use href={`${iconsSpriteUrl}#${name}`} />
     </svg>
-  </li>
+  </span>
 );
 
 export default Icon;

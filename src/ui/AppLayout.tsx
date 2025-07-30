@@ -26,7 +26,7 @@ function AppLayout() {
         <BurgerMenu />
         <Header />
 
-        <main className="lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24">
+        <main className="lg:col-start-2 px-8 lg:px-0 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24">
           <Outlet />
         </main>
 

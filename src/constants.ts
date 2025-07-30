@@ -1,3 +1,17 @@
+const menuItems = [
+  { icon: "home-icon", label: "Home", path: "/" },
+  { icon: "search-icon", label: "Search A Book", path: "/search" },
+  { icon: "saved-icon", label: "Saved Books", path: "/saved" },
+  { icon: "what-to-read", label: "Hmm... Choose A Book", path: "/choose" },
+  {
+    icon: "translate-to-voice",
+    label: "Let`s transform to voice",
+    path: "/voice",
+  },
+  { icon: "add-friend", label: "Add Friends", path: "/friends" },
+  { icon: "settings", label: "Settings", path: "/settings" },
+];
+
 const popularBooks = [
   {
     id: "1",
@@ -47,5 +61,5 @@ const announcementsBooks = [
   // Додайте більше книжок
 ];
 
-export { popularBooks, announcementsBooks };
+export { popularBooks, announcementsBooks, menuItems };
 export const BOOKS_PER_PAGE = 3; // Кількість книжок на сторінці

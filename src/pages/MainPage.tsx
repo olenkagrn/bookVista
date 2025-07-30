@@ -1,6 +1,6 @@
 import React from "react";
 import BookSection from "../ui/MainComponent/BookSection/BookSection";
-import { announcementsBooks, popularBooks } from "../constanrs";
+import { announcementsBooks, popularBooks } from "../constants";
 import HeroSection from "../ui/MainComponent/HeroSection/HeroSection";
 import ScheduleReading from "../ui/ScheduleReading/ScheduleReading";
 import ReadersFriends from "../ui/ReadersFriends/ReadersFriends";
