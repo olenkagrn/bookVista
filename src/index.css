@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Montserrat", "sans-serif";
+  --color-border: #959389;
+  --color-background: #f1efe3;
+  --color-dark-default: #2a2a2a;
+  --color-accent: #ff4f5b;
+  --color-btn-hover: #f57a82;
+}
