@@ -14,6 +14,7 @@ const ErrorPage = () => {
         for.
       </p>
       <Button
+        type="primary"
         buttonText="Try again"
         className="text-background border-0 bg-accent px-8 "
       />

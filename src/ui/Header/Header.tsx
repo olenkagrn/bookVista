@@ -10,6 +10,7 @@ const Header: React.FC = () => {
       <Icon name="notifications" width={32} height={32} />
       <Icon name="dark-mode" width={32} height={32} />
       <Button
+        type="primary"
         buttonText="Logout"
         className="bg-accent text-background text-xl px-10 py-2"
       />

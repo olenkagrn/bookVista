@@ -15,6 +15,7 @@ const NotFoundPage: React.FC = () => {
           moved.
         </p>
         <Button
+          type="primary"
           buttonText="Go Back"
           className="bg-accent text-background py-3 mt-12"
         >

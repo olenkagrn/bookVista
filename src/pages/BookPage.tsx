@@ -4,7 +4,7 @@ import Icon from "../kit/Icon";
 import Button from "../kit/Button";
 import BookSection from "../ui/MainComponent/BookSection/BookSection";
 import { announcementsBooks } from "../constanrs";
-
+import StarRating from "../ui/StartRating";
 const BookPage = () => {
   return (
     <section className="px-8 lg:px-16 mt-20 grid place-items-center gap-y-12 gap-x-20  lg:grid-rows-[min-content_min-content_1fr]  lg:grid-cols-[1fr_1fr]">
@@ -21,7 +21,7 @@ const BookPage = () => {
             name="arrow-long-right"
             width={42}
             height={42}
-            className="text-background rotate-180 absolute top-8 left-8 z-20"
+            className="text-background  rotate-180 absolute top-8 left-8 z-20"
           />
 
           <img
@@ -30,19 +30,20 @@ const BookPage = () => {
             className="w-[300px] lg:absolute pt-24 lg:pt-0 lg:mt-0  lg:w-[350px] lg:h-[500px] lg:left-20 lg:top-30 lg:z-20"
           />
 
-          <div className="flex flex-col gap-4 text-background z-20 mr-20 ">
+          <div className="flex flex-col items-center lg:items-start justify-center py-8 lg:py-0 gap-4 text-background z-20 lg:mr-20 ">
             <h2 className="text-5xl font-semibold">
               A Court of Thorns and Roses
             </h2>
             <p className="text-[32px]">Sarah J. Maas</p>
             <p className="text-2xl font-light">12 Publications</p>
-            <span>rating</span>
+            <StarRating color="background" />
           </div>
         </div>
       </div>
 
       <div className="flex flex-wrap gap-4 mt-12 lg:mt-0 lg:row-start-2 lg:col-2">
         <Button
+          type="transparent"
           buttonText="ADD TO BOOKMARK"
           className="border border-accent flex items-center justify-center gap-2"
         >
@@ -54,10 +55,12 @@ const BookPage = () => {
           />
         </Button>
         <Button
+          type="transparent"
           buttonText="I READ IT NOW!"
           className="border border-accent flex items-center justify-center gap-2"
         />
         <Button
+          type="transparent"
           buttonText="ADD TO SECRET BOX"
           className="border border-accent flex items-center justify-center gap-2"
         >
@@ -82,16 +85,19 @@ const BookPage = () => {
         </p>
         <div className="flex gap-4">
           <Button
+            type="transparent"
             buttonText="Fantasy"
             className="border-accent text-[20px] rounded-full text-center"
           />
           <Button
+            type="transparent"
             buttonText="Fantasy"
             className="border-accent text-[20px] rounded-full text-center"
           />
           <Button
+            type="transparent"
             buttonText="Fantasy"
-            className="border-accent] text-[20px] rounded-full text-center"
+            className="border-accent text-[20px] rounded-full text-center"
           />
         </div>
       </div>

@@ -10,6 +10,7 @@ const WhatToReadPage = () => {
         <img src={WhatReadImg} alt="Which Book to read" />
       </figure>
       <Button
+        type="primary"
         buttonText="Spin Books"
         className="bg-accent text-background text-2xl"
       />

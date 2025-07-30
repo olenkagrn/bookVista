@@ -8,7 +8,7 @@ const Icon: React.FC<IconProps> = ({
   width = 48,
   height = 48,
 }) => (
-  <li className="list-none">
+  <li className="list-none cursor-pointer">
     <svg
       className={`inline-block fill-current rounded-full
  ${className}`}
