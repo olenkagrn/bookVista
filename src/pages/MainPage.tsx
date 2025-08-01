@@ -1,6 +1,5 @@
 import React from "react";
 import BookSection from "../ui/MainComponent/BookSection/BookSection";
-import { announcementsBooks, popularBooks } from "../constants";
 import HeroSection from "../ui/MainComponent/HeroSection/HeroSection";
 import ScheduleReading from "../ui/ScheduleReading/ScheduleReading";
 import ReadersFriends from "../ui/ReadersFriends/ReadersFriends";
@@ -13,13 +12,13 @@ const MainPage: React.FC = () => {
           <HeroSection />
         </section>
         <section className="md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-5 ">
-          <BookSection title="Popular Now" limit={3} books={popularBooks} />
+          <BookSection title="Popular Now" limit={3} books={[]} />
         </section>{" "}
         <section className="md:col-start-2 md:col-end-3 md:row-start-5 md:row-end-6 ">
           <BookSection
             title="This month's announcements"
             limit={3}
-            books={announcementsBooks}
+            books={[]}
           />
         </section>{" "}
         <ScheduleReading />

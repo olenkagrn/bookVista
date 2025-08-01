@@ -1,8 +1,8 @@
-import type BookItem from "./BookItem";
+import type BookProps from "./BookProps";
 
 export default interface BookSectionProps {
   title: string;
-  books: BookItem[];
+  books: BookProps[];
   limit?: number;
   className?: string;
 }

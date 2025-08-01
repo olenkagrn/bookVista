@@ -3,7 +3,6 @@ import BookImg from "../assets/booktitle.png";
 import Icon from "../kit/Icon";
 import Button from "../kit/Button";
 import BookSection from "../ui/MainComponent/BookSection/BookSection";
-import { announcementsBooks } from "../constants";
 import StarRating from "../ui/StartRating";
 const BookPage = () => {
   return (
@@ -103,7 +102,7 @@ const BookPage = () => {
       </div>
       <BookSection
         title="This Authors Books"
-        books={announcementsBooks}
+        books={[]}
         limit={3}
         className="lg:row-end-4 lg:col-span-1 lg:place-self-start"
       />

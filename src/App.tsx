@@ -4,7 +4,7 @@ import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import AppLayout from "./ui/AppLayout";
 import NotFoundPage from "./pages/NotFoundPage";
-import SearchBook from "./pages/SearchBook";
+import SearchBook from "./pages/SearchBookPage";
 import BookPage from "./pages/BookPage";
 import ErrorPage from "./pages/ErrorPage";
 import WhatToReadPage from "./pages/WhatToReadPage";

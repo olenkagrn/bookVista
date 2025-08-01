@@ -19,14 +19,14 @@ function AppLayout() {
       {isSideMenuHovered && (
         <div className="fixed inset-0 bg-dark-default opacity-30 z-40"></div>
       )}
-      <section className="flex flex-col min-h-screen pt-12 lg:grid lg:p-0 lg:grid-cols-[auto_1f_1fr] lg:grid-rows-[auto_1fr_auto] relative max-w-[1440px] m-auto bg-background ">
-        <aside className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:h-full">
+      <section className="flex flex-col min-h-screen pt-12 lg:grid lg:p-0 lg:grid-cols-[min-content_1fr] lg:grid-rows-[auto_1fr_auto] relative  m-auto bg-background ">
+        <aside className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 lg:h-full w-fit">
           <SideMenu onMenuHoverChange={setIsSideMenuHovered} />
         </aside>
         <BurgerMenu />
         <Header />
 
-        <main className="lg:col-start-2 px-8 lg:px-0 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24">
+        <main className="lg:col-start-2 px-8 lg:px-0 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24 max-w-[1400px] m-auto">
           <Outlet />
         </main>
 

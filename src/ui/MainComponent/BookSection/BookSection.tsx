@@ -30,7 +30,7 @@ const BookSection: React.FC<BooksProps> = ({
   return (
     <section className={`md:inline-block  ${className}`}>
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-xl md:text-3xl  font-semibold text-wrap text-dark-default">
+        <h2 className="text-xl md:text-2xl  font-semibold text-wrap text-dark-default">
           {title}
         </h2>
         <Icon
@@ -44,8 +44,9 @@ const BookSection: React.FC<BooksProps> = ({
       <div className="flex overflow-hidden gap-6 items-center justify-center md:justify-start">
         {booksToDisplay.map((book) => (
           <Book
+            id={book.id}
             key={book.id}
-            coverUrl={book.coverUrl}
+            coverurl={book.coverurl}
             title={book.title}
             author={book.author}
           />

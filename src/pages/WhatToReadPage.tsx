@@ -12,7 +12,7 @@ const WhatToReadPage = () => {
       <Button
         type="primary"
         buttonText="Spin Books"
-        className="bg-accent text-background text-2xl"
+        className="bg-accent text-background text-2xl p-3"
       />
     </section>
   );

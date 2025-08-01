@@ -1,3 +1,5 @@
+const BACK_URL = "http://localhost:3000";
+
 const menuItems = [
   { icon: "home-icon", label: "Home", path: "/" },
   { icon: "search-icon", label: "Search A Book", path: "/search" },
@@ -61,5 +63,5 @@ const announcementsBooks = [
   // Додайте більше книжок
 ];
 
-export { popularBooks, announcementsBooks, menuItems };
+export { popularBooks, announcementsBooks, menuItems, BACK_URL };
 export const BOOKS_PER_PAGE = 3; // Кількість книжок на сторінці

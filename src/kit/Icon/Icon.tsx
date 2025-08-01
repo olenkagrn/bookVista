@@ -7,6 +7,7 @@ const Icon: React.FC<IconProps> = ({
   className = "",
   width = 48,
   height = 48,
+  onClick,
 }) => (
   <span className="list-none cursor-pointer">
     <svg
@@ -14,6 +15,7 @@ const Icon: React.FC<IconProps> = ({
  ${className}`}
       width={width}
       height={height}
+      onClick={onClick}
     >
       <use href={`${iconsSpriteUrl}#${name}`} />
     </svg>

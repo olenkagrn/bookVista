@@ -1,18 +1,16 @@
 import React from "react";
+import type BookProps from "../../../models/BookProps";
+import { BACK_URL } from "../../../constants";
 
-interface BookProps {
-  coverUrl: string;
-  title: string;
-  author: string;
-}
+const Book: React.FC<BookProps> = ({ coverurl, title, author }) => {
+  const fullCoverUrl = `${BACK_URL}${coverurl}`;
 
-const Book: React.FC<BookProps> = ({ coverUrl, title, author }) => {
   return (
     <div className="flex flex-col items-center text-center w-44">
       <img
-        src={coverUrl}
+        src={fullCoverUrl}
         alt={title}
-        className="w-full object-fit  rounded-md shadow-md mb-2  max-h-60"
+        className="w-full object-fit  rounded-md shadow-md mb-2  h-60"
       />
       <h3 className="text-sm font-medium text-dark-default ">
         {" "}
