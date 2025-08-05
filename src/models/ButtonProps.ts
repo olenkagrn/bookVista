@@ -3,4 +3,5 @@ export default interface ButtonProps {
   children?: React.ReactNode;
   className: string;
   type: "primary" | "transparent";
+  onClick?: () => void;
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../kit/Button";
 import Icon from "../kit/Icon";
 import NotFoundImg from "../assets/404.png";

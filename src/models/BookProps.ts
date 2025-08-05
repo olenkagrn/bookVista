@@ -3,8 +3,8 @@ export default interface BookProps {
   title: string;
   coverurl: string;
   author: string;
-  authorBooksAmount?: number;
-  averageRating?: number;
+  authorbooksamount?: number;
+  averagerating?: string;
   genres?: string[];
   description?: string;
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import AppLayout from "./ui/AppLayout";
@@ -8,6 +6,7 @@ import SearchBook from "./pages/SearchBookPage";
 import BookPage from "./pages/BookPage";
 import ErrorPage from "./pages/ErrorPage";
 import WhatToReadPage from "./pages/WhatToReadPage";
+import SavedBooksPage from "./pages/SavedBooksPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,12 +22,16 @@ function App() {
           element: <SearchBook />,
         },
         {
-          path: "book",
+          path: "books/:id",
           element: <BookPage />,
         },
         {
           path: "choose",
           element: <WhatToReadPage />,
+        },
+        {
+          path: "saved",
+          element: <SavedBooksPage />,
         },
       ],
     },

@@ -49,6 +49,7 @@ const BookSection: React.FC<BooksProps> = ({
             coverurl={book.coverurl}
             title={book.title}
             author={book.author}
+            averagerating={book.averagerating}
           />
         ))}
       </div>

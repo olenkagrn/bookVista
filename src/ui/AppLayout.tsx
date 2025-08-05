@@ -1,5 +1,5 @@
 import { Outlet, useNavigation } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import SideMenu from "./SideMenu";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import Header from "./Header/Header";
@@ -26,7 +26,7 @@ function AppLayout() {
         <BurgerMenu />
         <Header />
 
-        <main className="lg:col-start-2 px-8 lg:px-0 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24 max-w-[1400px] m-auto">
+        <main className="lg:col-start-2 px-8 lg:px-0 lg:col-end-5 lg:row-start-2 lg:row-end-3  lg:p-0 lg:mb-24 max-w-[1400px] m-auto h-full">
           <Outlet />
         </main>
 

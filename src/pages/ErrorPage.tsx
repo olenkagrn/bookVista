@@ -1,4 +1,3 @@
-import React from "react";
 import ErrorImg from "../assets/error.png";
 import Button from "../kit/Button";
 

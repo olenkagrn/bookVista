@@ -17,6 +17,7 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
           coverurl={book.coverurl}
           title={book.title}
           author={book.author}
+          averagerating={book.averagerating}
         />
       ))}
     </section>

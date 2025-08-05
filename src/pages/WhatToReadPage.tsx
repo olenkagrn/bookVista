@@ -1,4 +1,3 @@
-import React from "react";
 import WhatReadImg from "../assets/giphy.gif";
 import Button from "../kit/Button";
 const WhatToReadPage = () => {
